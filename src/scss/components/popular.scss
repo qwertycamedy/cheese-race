@@ -1,0 +1,87 @@
+.popular {
+  margin-bottom: 32px;
+  &__title {
+    color: #203B70;
+    margin-bottom: 18px;    
+  }
+
+  &__card {
+    &-outer {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    width: 195px;
+    height: 355px;
+    background: #fff;
+    border-radius: 4px;
+    &-img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      transition: .3s linear;
+      &:hover {
+        opacity: .5;
+      }
+      &-outer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 195px;
+        height: 261px;
+      }
+    }
+    &-info {
+      padding: 10px 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 7px;
+      min-height: 100px;
+    }
+    &-title {
+      text-align: center;
+      font-size: 14px;
+      line-height: 14px;
+      color: #203B70;
+      transition: .3s linear;
+      &:hover {
+        color: #EE6616;
+      }
+    }
+    &-price-amount {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 15px;
+    }
+    &-price {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 14px;
+      color: #404040;
+    }
+    &-amount {
+      &-outer {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+      &-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #EE6616;
+        border-radius: 3px;
+        border: unset;
+        transition: .3s linear;
+        width: 32px;
+        height: 32px;
+        color: #fff;
+        &:hover {
+          background: #da5c14;
+        }
+      }
+    }
+  }
+}

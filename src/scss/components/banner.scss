@@ -1,0 +1,131 @@
+.banner {
+  margin-bottom: 50px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__slider {
+    cursor: grab;
+    width: 966px;
+    height: 325px;
+    &-inner {
+      position: relative;
+      width: 966px;
+      height: 325px;
+      border-radius: 4px;
+      z-index: 1;
+      box-sizing: border-box;
+      padding: 50px 20px 22px;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    &-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+
+    &-title {
+      font-size: 48px;
+      font-family: "Koryaka-Free", sans-serif;
+      line-height: 58px;
+      color: #203B70;
+      font-weight: 100;
+      margin-top: 0;
+      margin-bottom: 12px;
+      -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-color: #ffffff;
+    }
+
+    &-subtitle {
+      font-size: 18px;
+      line-height: 21px;
+      max-width: 502px;
+      color: #404040;
+      flex: 1 0 auto;
+    }
+
+    &-link {
+      width: 140px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #FFFFFF;
+      background: #EE6616;
+      border-radius: 4px;
+      flex: 0 0 auto;
+    }
+
+    &-pagination {
+      & .swiper-pagination-bullet {
+        background: #FFFFFF;
+        border: 1px solid #203B70;
+        box-sizing: border-box;
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+        transition: .3s linear;
+        margin: 0 10px !important;
+
+        &-active {
+          background: #EE6616;
+        }
+      }
+    }
+  }
+
+  &__best {
+    height: 100%;
+    width: 306px;
+    height: 325px;
+    position: relative;
+    padding: 14px 25px;
+    display: flex;
+    flex-direction: column;
+
+    &-bg {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      object-fit: cover;
+      position: absolute;
+    }
+    &-title {
+      font-size: 30px;
+      line-height: 36px;
+      color: #203B70;
+      font-family: "Koryaka-Free", sans-serif;
+      flex: 1 0 auto; 
+      -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-color: #ffffff;
+    }
+    &-link {
+      width: 140px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #FFFFFF;
+      background: #EE6616;
+      border-radius: 4px;
+      flex: 0 0 auto;
+      margin: 0 auto;
+    }
+  }
+}
