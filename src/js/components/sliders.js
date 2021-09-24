@@ -1,11 +1,23 @@
 if(document.querySelector('.suppliers__slider')) {
   new Swiper('.suppliers__slider', {
-    slidesPerView: 3,
-    spaceBetween: 23,
     pagination: {
       el: '.suppliers__slider-pagination',
       clickable: true,
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 23
+      },
+      766: {
+        slidesPerView: 2,
+        spaceBetween: 23
+      },
+      1300: {
+        slidesPerView: 3,
+        spaceBetween: 23
+      }
+    }
   });
 }
 

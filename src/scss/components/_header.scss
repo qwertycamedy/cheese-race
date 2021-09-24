@@ -162,7 +162,7 @@
     line-height: 20px;
     color: #FFFFFF;
     &:hover {
-      background: #da5b11;
+      background: #203B70;
     }
   }
   &__menu {
@@ -187,7 +187,11 @@
       align-items: center;
       gap: 5px;
       color: #EE6616;
+      border: unset;
+      background: transparent;
       transition: .3s linear;
+      font-size: 18px;
+      line-height: 21px;
       &:hover {
         text-decoration: underline;
         font-weight: 700;
@@ -215,6 +219,7 @@
       visibility: hidden;
       pointer-events: none;
       transform: translateY(-10px);
+      z-index: 1;
       &-link {
         color: #fff;
         text-decoration: underline transparent;
@@ -266,4 +271,7 @@
       }
     }
   }
+}
+.mobile-header {
+  display: none;
 }

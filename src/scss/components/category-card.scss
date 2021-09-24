@@ -11,6 +11,39 @@
     height: 531px;
     background: #fff;
     border-radius: 4px;
+    position: relative;
+
+    &:hover {
+      .category-card__card-additional-outer {
+        opacity: 1;
+      }
+    }
+    &-additional {
+      &-outer {
+        z-index: 2;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        gap: 5px;
+        opacity: 0;
+        transition: .3s linear;
+      }
+      font-size: 14px;
+      line-height: 14px;
+      padding: 4px 10px;
+      color: #FFFFFF;
+      border-radius: 3px;
+      &.orange {
+        background: rgba(238, 102, 22, 0.75);
+      }
+      &.green {
+        background: rgba(113, 173, 49, 0.75);
+      }
+    }
     &-img {
       object-fit: cover;
       height: 100%;
@@ -97,7 +130,7 @@
         height: 32px;
         color: #fff;
         &:hover {
-          background: #da5c14;
+          background: #203B70;
         }
       }
     }

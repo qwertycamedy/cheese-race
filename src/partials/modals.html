@@ -1,3 +1,93 @@
 <div class="modals">
-  
+  <div class="telModal">
+    <div class="telModal__inner">
+      <div class="telModal__title-close">
+        <h4 class="telModal__title">
+          <div class="telModal__title-img-outer">
+            <svg class='telModal__title-img'>
+              <use xlink:href='img/sprite.svg#tel'></use>
+            </svg>
+          </div>
+          Обратный звонок
+        </h4>
+        <button class="close"></button>
+      </div>
+      <div class="telModal__form-outer">
+        <form class="telModal__form">
+          <div class="telModal__input-outer">
+            <div class="telModal__input-img-outer">
+              <svg class='telModal__input-img'>
+                <use xlink:href='img/sprite.svg#tel'></use>
+              </svg>
+            </div>
+            <input class="telModal__input" type="text" placeholder="Ваше имя" required>
+          </div>
+          <div class="telModal__input-outer">
+            <div class="telModal__input-img-outer">
+            <svg class='telModal__input-img'>
+              <use xlink:href='img/sprite.svg#provider'></use>
+            </svg>
+            </div>
+            <input class="telModal__input" type="text" placeholder="Ваш телефон" required>
+          </div>
+          <textarea class='telModal__textarea' name="textarea" id="telModalTextArea" placeholder="Ваш комментарий, если требуется"></textarea>
+          <button class="telModal__button" type='submit'>Заказать звонок</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="writeModal">
+    <div class="writeModal__inner">
+      <div class="writeModal__title-close">
+        <h4 class="writeModal__title">
+          <div class="writeModal__title-img-outer">
+            <svg class='writeModal__title-img'>
+              <use xlink:href='img/sprite.svg#mail'></use>
+            </svg>
+          </div>
+          Написать нам
+        </h4>
+        <button class="close"></button>
+      </div>
+      <div class="writeModal__form-outer">
+        <form class="writeModal__form">
+          <div class="writeModal__input-outer">
+            <div class="writeModal__input-img-outer">
+              <svg class='writeModal__input-img'>
+                <use xlink:href='img/sprite.svg#provider'></use>
+              </svg>
+            </div>
+            <input class="writeModal__input" type="text" placeholder="Ваше имя" required>
+          </div>
+          <textarea class='writeModal__textarea' name="textarea" id="telModalTextArea" placeholder="Ваш комментарий" required></textarea>
+          <button class="writeModal__button" type='submit'>Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobileBottom">
+    <div class="container">
+      <ul class="mobileBottom__list">
+        <li class="mobileBottom__list-item">
+          <a class="mobileBottom__list-link" href="all.html">
+            <img class="mobileBottom__list-link-img" src="img/product-orange.svg" alt="img">
+            Продукты
+          </a>
+        </li>
+        <li class="mobileBottom__list-item">
+          <a class="mobileBottom__list-link" href="#">
+            <img class="mobileBottom__list-link-img" src="img/favorite.svg" alt="img">
+            Любимое
+          </a>
+        </li>
+        <li class="mobileBottom__list-item">
+          <a class="mobileBottom__list-link" href="cart.html">
+            <img class="mobileBottom__list-link-img" src="img/cart.svg" alt="img">
+            Корзина
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

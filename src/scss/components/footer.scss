@@ -4,6 +4,7 @@
   &__map {
     width: 100%;
     height: 330px;
+    border: unset;
     &-outer {
       margin-bottom: 40px;
     }
@@ -159,7 +160,8 @@
       transition: .3s linear;
 
       &:hover {
-        background: #da5c14;
+        background: #fff;
+        color: #EE6616
       }
     }
   }
@@ -175,6 +177,7 @@
     text-decoration: underline transparent;
     transition: .3s linear;
     &:hover {
+      color: #fff;
       text-decoration: underline;
     }
   }
